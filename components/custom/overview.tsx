@@ -14,56 +14,18 @@ export const Overview = () => {
       transition={{ delay: 0.5 }}
     >
       <div className="rounded-xl p-6 flex flex-col gap-8 leading-relaxed text-center max-w-xl">
-        <p className="flex flex-row justify-center gap-4 items-center">
-          <VercelIcon size={32} />
-          <span>+</span>
-          <SupabaseIcon />
-          <span>+</span>
-          <MessageIcon size={32} />
-        </p>
-        <p>
-          This is an{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://github.com/vercel/ai-chatbot"
-            target="_blank"
-          >
-            open source
-          </Link>{' '}
-          chatbot template built with Next.js, the AI SDK by Vercel, and
-          Supabase. It uses the{' '}
-          <code className="rounded-md bg-muted px-1 py-0.5">streamText</code>{' '}
-          function in the server and the{' '}
-          <code className="rounded-md bg-muted px-1 py-0.5">useChat</code> hook
-          on the client to create a seamless chat experience, with{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://supabase.com"
-            target="_blank"
-          >
-            Supabase
-          </Link>{' '}
-          providing real-time data storage and authentication.
-        </p>
-        <p>
-          Learn more about the{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://sdk.vercel.ai/docs"
-            target="_blank"
-          >
-            AI SDK
-          </Link>{' '}
-          and{' '}
-          <Link
-            className="font-medium underline underline-offset-4"
-            href="https://supabase.com/docs"
-            target="_blank"
-          >
-            Supabase
-          </Link>{' '}
-          in their respective documentation.
-        </p>
+        <svg width="136" height="51" viewBox="0 0 91 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_1378_972)">
+            <path d="M38.7845 3.51932L40.3588 0.0409376C40.3821 -0.0182187 40.4404 -0.0537109 40.5104 -0.0537109H58.8886C58.9818 -0.0537109 59.0518 0.0172758 59.0518 0.111926V3.06974C59.0518 3.11706 59.0402 3.15255 59.0052 3.18805L49.8161 13.2446C49.7228 13.3511 49.7928 13.5286 49.9327 13.5286C55.5651 13.5286 60.4045 16.6283 60.4045 23.4431C60.4045 29.4889 55.6117 34.0203 49.1747 34.0203C42.3762 34.0203 36.9537 28.3886 36.8721 21.0887C36.8721 20.9941 36.942 20.9231 37.0353 20.9231H40.4637C40.557 20.9231 40.627 20.9941 40.627 21.0887C40.697 26.4364 44.3353 30.4117 49.0814 30.4117C53.4078 30.4117 56.6379 27.4066 56.6379 23.5023C56.6379 19.3614 53.676 16.5455 49.1747 16.5455H46.8541C46.8075 16.5455 46.7608 16.5219 46.7258 16.4864L44.8484 14.3212C44.7901 14.2621 44.7901 14.1674 44.8484 14.0965L53.571 4.05173C53.6643 3.94525 53.5943 3.77961 53.4427 3.77961H38.9361C38.8195 3.75595 38.7379 3.6258 38.7845 3.51932Z" fill="white"/>
+            <path d="M77.4885 -0.0654297C85.3132 -0.0654297 91.0156 6.89134 91.0156 17.0189C91.0156 27.0045 85.3132 34.0085 77.4885 34.0085C69.7104 34.0085 64.0547 26.7323 64.0547 17.0189C64.0547 7.17529 69.7104 -0.0654297 77.4885 -0.0654297ZM77.5351 30.4592C83.1908 30.4592 87.3306 24.863 87.3306 16.9716C87.3306 9.03279 83.2841 3.48394 77.5351 3.48394C71.7861 3.48394 67.7396 9.12744 67.7396 16.9716C67.7396 24.721 71.7861 30.4592 77.5351 30.4592Z" fill="white"/>
+            <path d="M13.5813 29.4454H17.824L4.22426 0H0M35.6433 0H31.4191L17.824 29.4454H22.0667M17.824 29.4454L15.7303 34H19.9177L19.9223 33.9954L17.824 29.4454ZM19.9638 20.6317L19.9592 20.627H15.7118L17.8378 25.2508L19.9638 20.6317Z" fill="white"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_1378_972">
+              <rect width="91" height="34" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
       </div>
     </motion.div>
   );

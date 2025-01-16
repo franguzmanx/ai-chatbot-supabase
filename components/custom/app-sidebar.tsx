@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 
 import { PlusIcon } from '@/components/custom/icons';
 import { SidebarHistory } from '@/components/custom/sidebar-history';
-import { SidebarUserNav } from '@/components/custom/sidebar-user-nav';
 import { Button } from '@/components/ui/button';
 import {
   Sidebar,
@@ -37,7 +36,7 @@ export function AppSidebar({ user }: { user: User | null }) {
               className="flex flex-row gap-3 items-center"
             >
               <span className="text-lg font-semibold px-2 hover:bg-muted rounded-md cursor-pointer">
-                Chatbot
+                V30 Chat 
               </span>
             </div>
             <BetterTooltip content="New Chat" align="start">
@@ -61,15 +60,7 @@ export function AppSidebar({ user }: { user: User | null }) {
           <SidebarHistory user={user ?? undefined} />
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter className="gap-0">
-        {user && (
-          <SidebarGroup>
-            <SidebarGroupContent>
-              <SidebarUserNav user={user} />
-            </SidebarGroupContent>
-          </SidebarGroup>
-        )}
-      </SidebarFooter>
+      <SidebarFooter className="gap-0" />
     </Sidebar>
   );
 }

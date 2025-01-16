@@ -24,14 +24,14 @@ import { Textarea } from '../ui/textarea';
 
 const suggestedActions = [
   {
-    title: 'What is the weather',
-    label: 'in San Francisco?',
-    action: 'What is the weather in San Francisco?',
+    title: 'Help me optimize my LinkedIn post',
+    label: 'for better engagement and reach',
+    action: 'Help me optimize my LinkedIn post for better engagement and reach, ask me for wich is the post you want to optimize',
   },
   {
-    title: 'Help me draft an essay',
-    label: 'about Silicon Valley',
-    action: 'Help me draft a short essay about Silicon Valley',
+    title: 'Change the tone of this X post',
+    label: 'to be more professional',
+    action: "Let's change the tone of this X post to be more professional, ask me for wich is the post you want to change",
   },
 ];
 
@@ -308,17 +308,7 @@ export function MultimodalInput({
         </Button>
       )}
 
-      <Button
-        className="rounded-full p-1.5 h-fit absolute bottom-2 right-11 m-0.5 dark:border-zinc-700"
-        onClick={(event) => {
-          event.preventDefault();
-          fileInputRef.current?.click();
-        }}
-        variant="outline"
-        disabled={isLoading}
-      >
-        <PaperclipIcon size={14} />
-      </Button>
+      
     </div>
   );
 }
